@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FASHION SHOP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>FASHION SHOP</h1>
+        <nav>
+            <a href="#inicio" data-section="inicio">Inicio</a>
+            <a href="#productos" data-section="productos">Productos</a>
+            <a href="#carrito" data-section="carrito">Carrito</a>
+            <a href="#contacto" data-section="contacto">Contacto</a>
+        </nav>
+        <div class="cart">
+            <span>🛒</span>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="active">
+        <h2>Bienvenido a FASHION SHOP</h2>
+        <p class="welcome-message">Explora las últimas tendencias de moda en FASHION SHOP. Tenemos todo lo que necesitas para lucir increíble esta temporada. ¡Descubre nuestras ofertas exclusivas!</p>
+        <img src="Productos/Imagen8.jpg" alt="Moda Bienvenida" class="welcome-image">
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos">
+        <h2>Productos Disponibles</h2>
+        <div class="products">
+            <div class="product">
+                <img src="Productos/Imagen1.jpg" alt="Pantalón Oversize">
+                <h3>Pantalón Oversize</h3>
+                <p>$150,000 COP</p>
+                <button data-product="Pantalón Oversize" data-price="150000">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Productos/Imagen2.jpg" alt="Vestido floreado">
+                <h3>Vestido floreado</h3>
+                <p>$180,000 COP</p>
+                <button data-product="Vestido floreado" data-price="180000">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Productos/Imagen3.jpg" alt="Bufanda mar">
+                <h3>Bufanda mar</h3>
+                <p>$80,000 COP</p>
+                <button data-product="Bufanda mar" data-price="80000">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Productos/Imagen4.jpg" alt="Botas edición X3">
+                <h3>Botas edición X3</h3>
+                <p>$250,000 COP</p>
+                <button data-product="Botas edición X3" data-price="250000">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Productos/Imagen5.jpg" alt="Bolso aguamarina">
+                <h3>Bolso aguamarina</h3>
+                <p>$200,000 COP</p>
+                <button data-product="Bolso aguamarina" data-price="200000">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Productos/Imagen6.jpg" alt="Abrigo animal print">
+                <h3>Abrigo animal print</h3>
+                <p>$300,000 COP</p>
+                <button data-product="Abrigo animal print" data-price="300000">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Productos/Imagen7.jpg" alt="Suéter Rosa">
+                <h3>Suéter Rosa</h3>
+                <p>$100,000 COP</p>
+                <button data-product="Suéter Rosa" data-price="100000">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de carrito -->
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="cart-total">0</span> COP</p>
+        <button id="checkout-btn">Pagar</button>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para consultas o más información, contáctanos:</p>
+        <p>Email: info@fashionshop.com</p>
+        <p>Teléfono: +57 123 456 7890</p>
+        <p>Dirección: Carrera 10 #123-45, Bogotá, Colombia</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
